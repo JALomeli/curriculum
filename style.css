@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Agregar esta línea */
+    height: 80vh;
+    background-color: #f3fce7;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+    padding: 100px;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.card .info h2 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 24px;
+}
+
+.card .info h3 {
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+    font-size: 26px;
+}
+
+.card .info p {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.line {
+    position: relative;height: 0.5px;
+    background-color: #000000;
+    margin: 20px auto;
+    width: 95%;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 5px;
+    background-color: #000000;
+    bottom: -5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #f3fce7;
+    margin: 90px;
+    padding: auto;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    text-align: center;
+    height: 100%;
+    padding:50px;
+}
+
+.button {
+    background-color: #46614C;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 70px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+   
+}
+
+.button:hover {
+    background-color: #2f4133;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem ;
+    align-items: center;
+    
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0.5rem 0;
+  }
+  .section-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }

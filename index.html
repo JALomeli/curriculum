@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículum</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="Imagenes/avatarcurriculum.jpeg" alt="Foto de perfil" />
+        <div class="info">
+          <h1>Jose Antonio Lomeli Garcia</h1>
+          <h3>Ing. Software</h3>
+          <div class="line"></div>
+          <h3>Programador Full Stack</h3>
+          <h2>CONTACTO</h2>
+          <p>josea.lomeligar.scch@gmail.com</p>
+          <p>+52 614 130 0533</p>
+          <p>Mexico</p>
+        </div>
+      </div>
+      <div class="botones">
+        <div class="buttons-container">
+          <button
+            class="button alert-button"
+            data-alert-message="Busco una oportunidad profesional donde pueda aplicar mis conocimientos en desarrollo tanto frontend como backend, sin embargo, mi especial interés y pasión recae en el diseño y la experiencia de usuario del frontend. Aspiro a contribuir con mis habilidades para crear interfaces web intuitivas y estéticamente atractivas, aprovechando mis capacidades creativas y técnicas para mejorar la interacción del usuario con la plataforma digital. Estoy comprometido en colaborar con un equipo dinámico y comprometido, buscando siempre el crecimiento personal y profesional en un entorno que fomente la innovación y el desarrollo continuo."
+          >
+            Objetivo
+          </button>
+          <button
+            class="button alert-button"
+            data-alert-message="A pesar de no contar con experiencia profesional formal, he dedicado tiempo y esfuerzo en mi formación como desarrollador fullstack. Me he comprometido con un curso certificado por la SEP, donde he adquirido un amplio conocimiento en el desarrollo tanto frontend como backend, así como en la implementación de tecnologías relevantes en la industria. Durante este curso, he demostrado habilidades destacadas en la resolución de problemas, la colaboración en equipo y la capacidad para asimilar conceptos complejos de manera eficiente. Estoy entusiasmado por aplicar estas habilidades y conocimientos en un entorno profesional, contribuyendo al éxito del equipo y alcanzando nuevos logros en mi carrera como desarrollador."
+          >
+            Experiencia profesional
+          </button>
+          <button
+            class="button alert-button"
+            data-alert-message="Actualmente me encuentro cursando el penúltimo cuatrimestre de la carrera de Ingeniería de Software, donde mantengo un promedio destacado de 9.5. Mi enfoque académico se ha centrado en adquirir conocimientos sólidos en desarrollo de software, arquitectura de sistemas y tecnologías emergentes. Además, he complementado mi formación con un curso avalado por la SEP en desarrollo fullstack, que me ha proporcionado una comprensión integral de las herramientas y metodologías necesarias en el ámbito del desarrollo web. Estoy comprometido con mi educación continua y estoy ansioso por aplicar los conocimientos adquiridos en un entorno profesional."
+          >
+            Preparación académica
+          </button>
+          <button
+            class="button alert-button"
+            data-alert-message="Poseo fluidez en inglés y español, con capacidad para comunicarme de manera efectiva en ambos idiomas tanto de forma escrita como oral. Estoy interesado en ampliar mis habilidades lingüísticas en el futuro mediante la realización de un curso de lenguaje de señas, con el objetivo de mejorar mi capacidad de comunicación inclusiva y mi versatilidad en entornos multiculturales."
+          >
+            Idiomas
+          </button>
+          <button
+            class="button alert-button"
+            data-alert-message="Desarrollo Web: Experiencia en desarrollo frontend y backend, utilizando tecnologías como HTML, CSS, JavaScript, React.js, Next.js, Node.js, MongoDB, MySQL, y Git.
+Postman: Experiencia en el uso de Postman para probar y documentar APIs.
+Resolución de problemas: Habilidad para identificar y abordar eficientemente problemas técnicos y encontrar soluciones creativas y efectivas.
+Trabajo en equipo: Capacidad demostrada para colaborar de manera efectiva en equipos multidisciplinarios, comunicando ideas de manera clara y contribuyendo al logro de objetivos comunes.
+Adaptabilidad: Flexibilidad para enfrentar nuevos desafíos y aprender rápidamente nuevas tecnologías y herramientas.
+Comunicación: Habilidad para comunicarse de manera clara y efectiva, tanto en español como en inglés, tanto de forma escrita como oral.
+Autogestión: Capacidad para organizar y priorizar tareas de manera eficiente, manteniendo un alto nivel de productividad y cumpliendo con los plazos establecidos."
+          >
+            Habilidades
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll(".alert-button");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const message = button.getAttribute("data-alert-message");
+          alert(message);
+        });
+      });
+    </script>
+    <div class="section-info">
+      <h2 class="section-title" data-section-title="Objetivo">Objetivo</h2>
+<p> Busco una oportunidad profesional donde pueda aplicar mis conocimientos en desarrollo tanto frontend como backend, sin embargo, mi especial interés y pasión recae en el diseño y la experiencia de usuario del frontend. Aspiro a contribuir con mis habilidades para crear interfaces web intuitivas y estéticamente atractivas, aprovechando mis capacidades creativas y técnicas para mejorar la interacción del usuario con la plataforma digital. Estoy comprometido en colaborar con un equipo dinámico y comprometido, buscando siempre el crecimiento personal y profesional en un entorno que fomente la innovación y el desarrollo continuo.</p>
+      <div class="line"></div>
+
+
+      <h2 class="section-title" data-section-title="Experiencia profesional">
+        Experiencia profesional
+      </h2>
+<p> A pesar de no contar con experiencia profesional formal, he dedicado tiempo y esfuerzo en mi formación como desarrollador fullstack. Me he comprometido con un curso certificado por la SEP, donde he adquirido un amplio conocimiento en el desarrollo tanto frontend como backend, así como en la implementación de tecnologías relevantes en la industria. Durante este curso, he demostrado habilidades destacadas en la resolución de problemas, la colaboración en equipo y la capacidad para asimilar conceptos complejos de manera eficiente. Estoy entusiasmado por aplicar estas habilidades y conocimientos en un entorno profesional, contribuyendo al éxito del equipo y alcanzando nuevos logros en mi carrera como desarrollador.</p>
+      <div class="line"></div>
+
+      <h2 class="section-title" data-section-title="Preparación académica">
+        Preparación académica
+      </h2>
+<p> Actualmente me encuentro cursando el penúltimo cuatrimestre de la carrera de Ingeniería de Software, donde mantengo un promedio destacado de 9.5. Mi enfoque académico se ha centrado en adquirir conocimientos sólidos en desarrollo de software, arquitectura de sistemas y tecnologías emergentes. Además, he complementado mi formación con un curso avalado por la SEP en desarrollo fullstack, que me ha proporcionado una comprensión integral de las herramientas y metodologías necesarias en el ámbito del desarrollo web. Estoy comprometido con mi educación continua y estoy ansioso por aplicar los conocimientos adquiridos en un entorno profesional.</p>
+      <div class="line"></div>
+      <h2 class="section-title" data-section-title=" Preparación académica">
+        Idiomas
+      </h2>
+<p> Poseo fluidez en inglés y español, con capacidad para comunicarme de manera efectiva en ambos idiomas tanto de forma escrita como oral. Estoy interesado en ampliar mis habilidades lingüísticas en el futuro mediante la realización de un curso de lenguaje de señas, con el objetivo de mejorar mi capacidad de comunicación inclusiva y mi versatilidad en entornos multiculturales.</p>
+      <div class="line"></div>
+      <h2 class="section-title" data-section-title="Experiencia profesional">
+        Habilidades
+      </h2>
+<p> Desarrollo Web: Experiencia en desarrollo frontend y backend, utilizando tecnologías como HTML, CSS, JavaScript, React.js, Next.js, Node.js, MongoDB, MySQL, y Git.
+    <br> Postman: Experiencia en el uso de Postman para probar y documentar APIs.
+    Resolución de problemas: Habilidad para identificar y abordar eficientemente problemas técnicos y encontrar soluciones creativas y efectivas.
+    <br>  Trabajo en equipo: Capacidad demostrada para colaborar de manera efectiva en equipos multidisciplinarios, comunicando ideas de manera clara y contribuyendo al logro de objetivos comunes.
+    Adaptabilidad: Flexibilidad para enfrentar nuevos desafíos y aprender rápidamente nuevas tecnologías y herramientas.
+    <br>Comunicación: Habilidad para comunicarse de manera clara y efectiva, tanto en español como en inglés, tanto de forma escrita como oral.
+    <br>Autogestión: Capacidad para organizar y priorizar tareas de manera eficiente, manteniendo un alto nivel de productividad y cumpliendo con los plazos establecidos.</p>
+      <div class="line"></div>
+    </div>
+  </body>
 </html>
